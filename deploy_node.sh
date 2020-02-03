@@ -155,8 +155,8 @@ install_v2ray(){
 	echo "logs directory: /var/log/v2ray"
 	echo "configuration directory: /etc/v2ray"
 
-	curl -L -s https://raw.githubusercontent.com/828768/Shell/master/v2ray-ssrpanel-plugin-install.sh | bash
-	wget --no-check-certificate -O config.json https://raw.githubusercontent.com/828768/Shell/master/resource/v2ray-config.json
+	curl -L -s https://raw.githubusercontent.com/StriveMoring/ssrpanel-v2ray/master/v2ray-ssrpanel-plugin-install.sh | bash
+	wget --no-check-certificate -O config.json https://raw.githubusercontent.com/StriveMoring/ssrpanel-v2ray/master/v2ray-config.json
 	sed -i -e "s/v2ray_Port/$v2ray_Port/g" config.json
 	sed -i -e "s/alter_Id/$alter_Id/g" config.json
 	sed -i -e "s/forward_Path/$forward_Path/g" config.json
